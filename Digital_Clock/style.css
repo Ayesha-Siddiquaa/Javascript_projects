@@ -1,0 +1,119 @@
+/* General settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quantico:wght@700&display=swap');
+
+html {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Variables */
+
+:root {
+  --bg-color-yellow: #ffcc00;
+  --bg-color-blue: #0077ff;
+}
+
+/* Body */
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #0b0b0ba1;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+}  
+
+/* Digital clock */
+
+.digital-clock {
+  position: relative;
+  margin: .5em 0 0;
+  font: 5vmax Quantico, sans-serif;
+  color: var(--bg-color-yellow);
+  animation: rainbow-effect 3s ease-in-out infinite;
+}
+
+@keyframes rainbow-effect {
+    10% {color: #ffcc00; }
+    25% {color: #43db2f; }
+    40% {color: #0DC8F5; }
+    60% {color: #f32105; }
+    80% {color: #a34b9d; }
+    100% {color: #DC2076;}
+}
+
+@media (max-width: 60rem){  /* mobile format */
+    .digital-clock { margin: 1em 0 0; }   
+}
+
+/* Analog clock */
+
+#clock {
+  position: relative;
+  margin: 1.5em auto;
+  padding: 2rem;
+  width: 22vmax;
+  height: 22vmax;
+  border: .6vmin solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 1rem var(--bg-color-blue);
+}
+
+#clock:hover {
+  box-shadow: 0 0 1rem 1rem var(--bg-color-yellow);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+/* Clock-hands */
+
+.hand {
+  width: 50%;
+  border-radius: 15px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 50%; 
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all .05s ease-in-out;
+  transition-timing-function: cubic-bezier(.38,4.27,.25,1);
+}
+
+.hour-hand {
+  height: 10px;
+  box-shadow: 0 0 1rem #ffe600;
+}
+
+.min-hand {
+  height: 5px;
+  box-shadow: 0 0 1rem var(--bg-color-blue);
+}
+
+.second-hand {
+  background: #ff0000;
+  box-shadow: 0 0 1rem #f30;
+  height: 2px;
+}
+
+/* To make the seconds accurate at the analog clock */
+
+.fast {
+  transition: all 0s;
+}
