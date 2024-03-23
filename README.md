@@ -8,7 +8,7 @@ This repository contains a collection of small JavaScript projects. Each project
 2. [Digital Clock](#digital-clock)
 3. [To-Do List](#to-do-list)
 
-### 1. Calculator
+### Calculator
 
 The calculator project is a simple web-based calculator application. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator also includes functionalities like clearing the display, backspacing, and percentage calculation.
 
@@ -18,7 +18,7 @@ The calculator project is a simple web-based calculator application. It allows u
 - Percentage calculation
 - Responsive design
 
-### 2. Digital Clock
+### Digital Clock
 
 The digital clock project displays the current time in both digital and analog formats. The digital clock updates every second to show the current time accurately. The analog clock includes hour, minute, and second hands that move in real-time to represent the current time.
 
@@ -27,7 +27,7 @@ The digital clock project displays the current time in both digital and analog f
 - Analog clock with hour, minute, and second hands
 - Responsive design
 
-### 3. To-Do List
+### To-Do List
 
 The to-do list project is a simple task management application. It allows users to add, edit, delete, and mark tasks as done or undone. The application provides a clean and intuitive user interface for managing tasks efficiently.
 
