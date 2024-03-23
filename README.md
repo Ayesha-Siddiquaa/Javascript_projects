@@ -3,9 +3,10 @@
 This repository contains a collection of small JavaScript projects. Each project demonstrates various concepts and techniques using HTML, CSS, and JavaScript.
 
 ## Projects Included:
-[1. Calculator](#1.Calculator)
-[2. Digital Clock](#2.DigitalClock)
-[3. To-Do List](#3.To-DoList)
+
+1. [Calculator](#calculator)
+2. [Digital Clock](#digital-clock)
+3. [To-Do List](#to-do-list)
 
 ### 1. Calculator
 
